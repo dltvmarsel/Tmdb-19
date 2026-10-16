@@ -1,0 +1,77 @@
+#actorsDetails {
+  padding: 50px 0;
+  /* background: #fff; */
+  /* color: #111; */
+  min-height: 70vh;
+}
+
+.actorsDetails {
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.actorsDetails > img {
+  width: 300px;
+  min-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px #0002;
+}
+
+.actorsText {
+  flex: 1;
+  min-width: 0;
+}
+
+.actorsText h1 {
+  font-size: 48px;
+  margin: 0 0 25px;
+}
+
+.actorsText h2 {
+  font-size: 28px;
+  margin: 25px 0;
+}
+
+.actorsText p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.readMore {
+  color: #01b4e4;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.readMore:hover {
+  color: #0095c5;
+}
+
+.noBiography {
+  color: #888;
+  font-style: italic;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .actorsDetails {
+    flex-direction: column;
+  }
+
+  .actorsDetails > img {
+    width: 220px;
+    min-width: 0;
+  }
+
+  .actorsText h1 {
+    font-size: 34px;
+  }
+
+  .actorsText h2 {
+    font-size: 24px;
+  }
+}

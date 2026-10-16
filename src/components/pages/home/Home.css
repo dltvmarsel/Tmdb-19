@@ -1,0 +1,49 @@
+#home {
+  height: 80vh;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  position: relative;
+  h1 {
+    font-size: 55px;
+    margin-top: 130px;
+    font-weight: 800;
+  }
+  h3 {
+    font-size: 34px;
+  }
+  input {
+    width: 830px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    &::placeholder {
+      text-align: center;
+      color: gray;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+  button {
+    width: 140px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    background-color: rgb(0, 166, 255);
+    position: absolute;
+    top: 306px;
+    right: 190px;
+    cursor: pointer;
+  }
+}

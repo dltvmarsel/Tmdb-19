@@ -1,0 +1,30 @@
+#trend {
+  background-color: rgb(1, 55, 105);
+  /* margin-top: 200px; */
+  .trend {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    .trendCard {
+      margin-top: 40px;
+      width: 200px;
+      height: 500px;
+      h1 {
+        color: white;
+        margin-top: 20px;
+        width: 190px;
+        font-size: 20px;
+      }
+      h4 {
+        color: rgb(100, 99, 99);
+        margin-top: 10px;
+      }
+      img {
+        width: 200px;
+        border-radius: 15px;
+      }
+    }
+  }
+}

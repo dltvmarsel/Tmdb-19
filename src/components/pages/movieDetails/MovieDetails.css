@@ -1,0 +1,97 @@
+.movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 30px;
+  color: white;
+  img {
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:
+      filter 0.4s ease,
+      transform 0.4s ease;
+  }
+  img:hover {
+    filter: blur(8px);
+    transform: scale(1.03);
+  }
+  .movieText {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    h1 {
+      font-size: 40px;
+      font-weight: 800;
+      span {
+        font-weight: 500;
+      }
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .rating-top {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      h4 {
+        font-size: 20px;
+      }
+    }
+    .rating {
+      --rating: 0%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: conic-gradient(#20ce86 var(--rating), #101820 0);
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        background: #101820;
+      }
+
+      span {
+        position: relative;
+        z-index: 1;
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+      }
+    }
+    .icons {
+      display: flex;
+      gap: 23px;
+      align-items: center;
+      a {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        font-size: 23px;
+        background-color: #101820;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .obzor {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      h3 {
+        font-size: 18px;
+        color: gray;
+        font-style: italic;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+#header {
+  background-color: rgb(6, 6, 82);
+  padding: 29px 0;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .headerLeft {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      a {
+        color: white;
+        font-size: 22px;
+      }
+    }
+    .headerRight {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      select {
+        padding: 7px;
+        border-radius: 7px;
+        font-size: 17px;
+      }
+      input {
+        width: 250px;
+        height: 38px;
+        border-radius: 10px;
+        &::placeholder {
+          text-align: center;
+          color: black;
+          font-size: 15px;
+          border: none;
+        }
+      }
+      a {
+        color: white;
+        font-size: 20px;
+      }
+    }
+    .icons {
+      a {
+        color: white;
+        font-size: 20px;
+      }
+    }
+  }
+}
